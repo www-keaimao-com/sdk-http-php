@@ -1,6 +1,6 @@
-# LovecatApi-PHP
+### 可爱猫API接口Demo-PHP版本
 
- ###可爱猫 API 接口示例--PHP 版本
+ 
  
  示例代码可查看 api.php，需要设置可爱猫API接口地址,默认为```http://127.0.0.1:8073/send```
  
