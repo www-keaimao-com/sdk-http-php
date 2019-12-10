@@ -39,7 +39,7 @@ class lovelyCat
     /**
      * @var string 机器猫接口地址
      */
-    public $url = "http://106.12.172.186:8073/send";
+    public $url = "http://127.0.0.1:8073/send";
 
     public function __construct($config = null)
     {
