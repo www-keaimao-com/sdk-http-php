@@ -33,6 +33,15 @@ class lovelyCat
      */
     public $msg;
     /**
+     * @var int 消息类型（请务必使用新版http插件）<br><br> 1 =>文本消息 <br>3 => 图片消息 <br>34 => 语音消息 <br>42 => 名片消息 <br>43 =>视频 <br>47 => 动态表情 <br> 48 =>地理位置<br>49 => 分享链接 <br>2001 => 红包<br>2002 => 小程序<br>2003 => 群邀请 <br><br>更多请参考sdk模块常量值
+     * ）
+     */
+    public $msg_type;
+    /**
+     * @var string 如果是文件消息（图片、语音、视频、动态表情），这里则是可直接访问的网络地址，非文件消息时为空
+     */
+    public $file_url;
+    /**
      * @var int 请求时间(时间戳10位版本)
      */
     public $time;
@@ -75,6 +84,9 @@ class lovelyCat
         $this->final_from_wxid = $data['final_from_wxid'];
         $this->final_from_name = urldecode($data['final_from_name']);
         $this->robot_wxid = $data['robot_wxid'];
+        $this->msg = urldecode($data['msg']);
+        $this->msg_type = intval($data['msg']);
+        $this->file_url = $data['file_url'];
         $this->msg = urldecode($data['msg']);
         $this->time = $data['time'];
     }
