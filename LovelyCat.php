@@ -85,7 +85,7 @@ class lovelyCat
         $this->final_from_name = urldecode($data['final_from_name']);
         $this->robot_wxid = $data['robot_wxid'];
         $this->msg = urldecode($data['msg']);
-        $this->msg_type = intval($data['msg']);
+        $this->msg_type = intval($data['msg_type']);
         $this->file_url = $data['file_url'];
         $this->msg = urldecode($data['msg']);
         $this->time = $data['time'];
